@@ -1,0 +1,275 @@
+body{
+	background-image: url("../Img/Tienda.jpg");
+	background-repeat: no-repeat;
+	/*background-position:  center;*/
+	background-size: 100% 100%;
+	background-color: black;
+	
+}
+#dialogo{
+	position:fixed;
+	/*position: relative;
+	margin: 50% 50%;
+	width: 65px;
+	height: 65px;*/
+
+}
+p{ 
+  	position: absolute;
+  	margin-left: 240px;
+  	margin-top: 627px
+
+}
+.Mostrador{
+	padding: 20px 85px;
+	background: #3b89b6;
+	border: 1px solid #4896c4;
+	cursor: pointer;
+	position: fixed;
+	border-radius: 3px;
+	overflow: hidden;
+	margin-left: 100px;
+	margin-top: 440px;
+	
+ }
+.Mostrador::before{
+	content: 'Mostrador';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 16px;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-weight: 700;
+	text-shadow: 10px 10px 10px #333;
+	transition: .2 ease;
+}
+.Mostrador::after{
+	content: 'Inspeccionar';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) scale(0);
+	font-size: 16px;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-weight: 700;
+	text-shadow: 10px 10px 10px #333;
+	transition: .2 ease;
+	opacity: 0;
+}
+.Mostrador:hover::before{
+	transform: translate(-50%, -50%) scale(3);
+	opacity: 0;
+}
+.Mostrador:hover::after{
+	transform: translate(-50%, -50%) scale(1);
+	opacity: 1;
+}
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.Anden{
+	padding: 20px 85px;
+	background: #3b89b6;
+	border: 1px solid #4896c4;
+	cursor: pointer;
+	position: fixed;
+	border-radius: 3px;
+	overflow: hidden;
+	margin-left: 1450px;
+	margin-top: 400px;
+	
+ }
+.Anden::before{
+	content: 'Anden';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 16px;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-weight: 700;
+	text-shadow: 10px 10px 10px #333;
+	transition: .2 ease;
+}
+.Anden::after{
+	content: 'Inspeccionar';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) scale(0);
+	font-size: 16px;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-weight: 700;
+	text-shadow: 10px 10px 10px #333;
+	transition: .2 ease;
+	opacity: 0;
+}
+.Anden:hover::before{
+	transform: translate(-50%, -50%) scale(3);
+	opacity: 0;
+}
+.Anden:hover::after{
+	transform: translate(-50%, -50%) scale(1);
+	opacity: 1;
+}
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.Camara{
+	padding: 20px 129px;
+	background: #3b89b6;
+	border: 1px solid #4896c4;
+	cursor: pointer;
+	position: fixed;
+	border-radius: 3px;
+	overflow: hidden;
+	margin-left: 780px;
+	margin-top: 300px;
+	
+ }
+.Camara::before{
+	content: 'Camara de seguridad';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 16px;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-weight: 700;
+	text-shadow: 10px 10px 10px #333;
+	transition: .2 ease;
+}
+.Camara::after{
+	content: 'Inspeccionar';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) scale(0);
+	font-size: 16px;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-weight: 700;
+	text-shadow: 10px 10px 10px #333;
+	transition: .2 ease;
+	opacity: 0;
+}
+.Camara:hover::before{
+	transform: translate(-50%, -50%) scale(3);
+	opacity: 0;
+}
+.Camara:hover::after{
+	transform: translate(-50%, -50%) scale(1);
+	opacity: 1;
+}
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.Boton{
+	padding: 20px 85px;
+	background: #3b89b6;
+	border: 1px solid #4896c4;
+	cursor: pointer;
+	position: fixed;
+	border-radius: 3px;
+	overflow: hidden;
+	margin-left: 1495px;
+	margin-top: 850px;
+ }
+.Boton::before{
+	content: 'Continuar';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 16px;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-weight: 700;
+	text-shadow: 10px 10px 10px #333;
+	transition: .2 ease;
+}
+.Boton::after{
+	content: 'Siguiente';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) scale(0);
+	font-size: 16px;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-weight: 700;
+	text-shadow: 10px 10px 10px #333;
+	transition: .2 ease;
+	opacity: 0;
+}
+.Boton:hover::before{
+	transform: translate(-50%, -50%) scale(3);
+	opacity: 0;
+}
+.Boton:hover::after{
+	transform: translate(-50%, -50%) scale(1);
+	opacity: 1;
+}
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.Principal{
+	padding: 20px 85px;
+	background: #3b89b6;
+	border: 1px solid #4896c4;
+	cursor: pointer;
+	position: fixed;
+	border-radius: 3px;
+	overflow: hidden;
+	margin-left: 1495px;
+	margin-top: 800px;
+ }
+.Principal::before{
+	content: 'Menu';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 16px;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-weight: 700;
+	text-shadow: 10px 10px 10px #333;
+	transition: .2 ease;
+}
+.Principal::after{
+	content: 'Principal';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) scale(0);
+	font-size: 16px;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-weight: 700;
+	text-shadow: 10px 10px 10px #333;
+	transition: .2 ease;
+	opacity: 0;
+}
+.Principal:hover::before{
+	transform: translate(-50%, -50%) scale(3);
+	opacity: 0;
+}
+.Principal:hover::after{
+	transform: translate(-50%, -50%) scale(1);
+	opacity: 1;
+}

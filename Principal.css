@@ -1,0 +1,74 @@
+body{
+	background-image: url("Img/Principal.jpg");
+	background-repeat: no-repeat;
+	/*background-position:  center;*/
+	background-size: 100% 100%;
+	background-color: black;
+}
+
+
+h1{
+	position: fixed;
+	padding: 30px 40px;
+	background: #3b89b6;
+	border: 1px solid #4896c4;
+  	color: white;
+  	border-radius: 10px;
+  	opacity: 0.5;
+  	font-weight: normal;
+  	font-size: 30px;
+  	font-family: Arial;
+  	margin-left: 750px;
+	margin-top: 200px;
+  	/*text-transform: uppercase;*/
+}
+.Inicio{
+	padding: 20px 85px;
+	background: #3b89b6;
+	border: 1px solid #4896c4;
+	cursor: pointer;
+	position: fixed;
+	border-radius: 3px;
+	overflow: hidden;
+	margin-left: 750px;
+	margin-top: 600px;
+	
+ }
+.Inicio::before{
+	content: 'Clue!';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 16px;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-weight: 700;
+	text-shadow: 10px 10px 10px #333;
+	transition: .2 ease;
+}
+.Inicio::after{
+	content: 'Comenzar';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) scale(0);
+	font-size: 16px;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-weight: 700;
+	text-shadow: 10px 10px 10px #333;
+	transition: .2 ease;
+	opacity: 0;
+}
+.Inicio:hover::before{
+	transform: translate(-50%, -50%) scale(3);
+	opacity: 0;
+}
+.Inicio:hover::after{
+	transform: translate(-50%, -50%) scale(1);
+	opacity: 1;
+}
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/

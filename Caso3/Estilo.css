@@ -1,0 +1,351 @@
+body{
+	background-image: url("../Img/Barrio.jpg");
+	background-repeat: no-repeat;
+	/*background-position:  center;*/
+	background-size: 100% 100%;
+	background-color: black;
+	
+}
+#dialogo{
+	position:fixed;
+	/*position: relative;
+	margin: 50% 50%;
+	width: 65px;
+	height: 65px;*/
+
+}
+
+
+p{ 
+  	position: fixed;
+  	margin-left: 240px;
+  	margin-top: 627px;
+  	font-size: 19px;
+  	color: White;
+  	font-family: 'vernada';
+
+
+}
+span{
+display: block;
+font-family: monospace;
+white-space: nowrap;
+border-right: 4px solid;
+width: 165ch;
+
+animation: typing 2s steps(12), blink .5s infinite step-end alternate;
+overflow:hidden;
+}
+
+@keyFrames typing {
+
+from { width: 0}
+}
+
+@keyFrames blink {
+ 50% { border-color: transparent}
+}
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.Tienda{
+	padding: 20px 85px;
+	background: #3b89b6;
+	border: 1px solid #4896c4;
+	cursor: pointer;
+	position: fixed;
+	border-radius: 3px;
+	overflow: hidden;
+	margin-left: 100px;
+	margin-top: 440px;
+	
+ }
+.Tienda::before{
+	content: 'Tienda';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 16px;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-weight: 700;
+	text-shadow: 10px 10px 10px #333;
+	transition: .2 ease;
+}
+.Tienda::after{
+	content: 'Inspeccionar';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) scale(0);
+	font-size: 16px;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-weight: 700;
+	text-shadow: 10px 10px 10px #333;
+	transition: .2 ease;
+	opacity: 0;
+}
+.Tienda:hover::before{
+	transform: translate(-50%, -50%) scale(3);
+	opacity: 0;
+}
+.Tienda:hover::after{
+	transform: translate(-50%, -50%) scale(1);
+	opacity: 1;
+}
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.Oficina{
+	padding: 20px 85px;
+	background: #3b89b6;
+	border: 1px solid #4896c4;
+	cursor: pointer;
+	position: fixed;
+	border-radius: 3px;
+	overflow: hidden;
+	margin-left: 670px;
+	margin-top: 350px;
+	
+
+ }
+.Oficina::before{
+	content: 'Oficina';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 16px;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-weight: 700;
+	text-shadow: 10px 10px 10px #333;
+	transition: .2 ease;
+}
+.Oficina::after{
+	content: 'Inspeccionar';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) scale(0);
+	font-size: 16px;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-weight: 700;
+	text-shadow: 10px 10px 10px #333;
+	transition: .2 ease;
+	opacity: 0;
+}
+.Oficina:hover::before{
+	transform: translate(-50%, -50%) scale(3);
+	opacity: 0;
+}
+.Oficina:hover::after{
+	transform: translate(-50%, -50%) scale(1);
+	opacity: 1;
+}
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.Azotea{
+	padding: 20px 85px;
+	background: #3b89b6;
+	border: 1px solid #4896c4;
+	cursor: pointer;
+	position: fixed;
+	border-radius: 3px;
+	overflow: hidden;
+	margin-left: 250px;
+	margin-top: 89px;
+	
+
+ }
+.Azotea::before{
+	content: 'Azotea';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 16px;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-weight: 700;
+	text-shadow: 10px 10px 10px #333;
+	transition: .2 ease;
+}
+.Azotea::after{
+	content: 'Inspeccionar';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) scale(0);
+	font-size: 16px;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-weight: 700;
+	text-shadow: 10px 10px 10px #333;
+	transition: .2 ease;
+	opacity: 0;
+}
+.Azotea:hover::before{
+	transform: translate(-50%, -50%) scale(3);
+	opacity: 0;
+}
+.Azotea:hover::after{
+	transform: translate(-50%, -50%) scale(1);
+	opacity: 1;
+}
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.Callejon{
+	padding: 20px 85px;
+	background: #3b89b6;
+	border: 1px solid #4896c4;
+	cursor: pointer;
+	position: fixed;
+	border-radius: 3px;
+	overflow: hidden;
+	margin-left: 1200px;
+	margin-top: 550px;
+	
+
+ }
+.Callejon::before{
+	content: 'Callejon';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 16px;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-weight: 700;
+	text-shadow: 10px 10px 10px #333;
+	transition: .2 ease;
+}
+.Callejon::after{
+	content: 'Inspeccionar';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) scale(0);
+	font-size: 16px;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-weight: 700;
+	text-shadow: 10px 10px 10px #333;
+	transition: .2 ease;
+	opacity: 0;
+}
+.Callejon:hover::before{
+	transform: translate(-50%, -50%) scale(3);
+	opacity: 0;
+}
+.Callejon:hover::after{
+	transform: translate(-50%, -50%) scale(1);
+	opacity: 1;
+}
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.Calle{
+	padding: 20px 85px;
+	background: #3b89b6;
+	border: 1px solid #4896c4;
+	cursor: pointer;
+	position: fixed;
+	border-radius: 3px;
+	overflow: hidden;
+	margin-left: 900px;
+	margin-top: 550px;
+	
+
+ }
+.Calle::before{
+	content: 'Calle';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 16px;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-weight: 700;
+	text-shadow: 10px 10px 10px #333;
+	transition: .2 ease;
+}
+.Calle::after{
+	content: 'Inspeccionar';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) scale(0);
+	font-size: 16px;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-weight: 700;
+	text-shadow: 10px 10px 10px #333;
+	transition: .2 ease;
+	opacity: 0;
+}
+.Calle:hover::before{
+	transform: translate(-50%, -50%) scale(3);
+	opacity: 0;
+}
+.Calle:hover::after{
+	transform: translate(-50%, -50%) scale(1);
+	opacity: 1;
+}
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.Boton{
+	padding: 20px 85px;
+	background: #3b89b6;
+	border: 1px solid #4896c4;
+	cursor: pointer;
+	position: fixed;
+	border-radius: 3px;
+	overflow: hidden;
+	margin-left: 1490px;
+	margin-top: 850px;
+ }
+.Boton::before{
+	content: 'Continuar';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 16px;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-weight: 700;
+	text-shadow: 10px 10px 10px #333;
+	transition: .2 ease;
+}
+.Boton::after{
+	content: 'Siguiente';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) scale(0);
+	font-size: 16px;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-weight: 700;
+	text-shadow: 10px 10px 10px #333;
+	transition: .2 ease;
+	opacity: 0;
+}
+.Boton:hover::before{
+	transform: translate(-50%, -50%) scale(3);
+	opacity: 0;
+}
+.Boton:hover::after{
+	transform: translate(-50%, -50%) scale(1);
+	opacity: 1;
+}
+
